@@ -10,20 +10,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
-   "id": "e63f79a8",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import streamlit as st\n",
-    "import pandas as pd\n",
-    "import numpy as np"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 4,
-   "id": "49e37456",
+   "execution_count": 6,
+   "id": "234259e7",
    "metadata": {},
    "outputs": [
     {
@@ -84,12 +72,13 @@
        "3             4             40"
       ]
      },
-     "execution_count": 4,
+     "execution_count": 6,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
+    "import pandas as pd\n",
     "df = pd.DataFrame({\n",
     "  'first column': [1, 2, 3, 4],\n",
     "  'second column': [10, 20, 30, 40]\n",
@@ -99,89 +88,9 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "id": "83d333bc",
-   "metadata": {},
-   "source": [
-    "<h1> Hola </h>"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 6,
-   "id": "6370170e",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "DeltaGenerator(_root_container=0, _provided_cursor=None, _parent=None, _block_type=None, _form_data=None)"
-      ]
-     },
-     "execution_count": 6,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "dataframe = np.random.randn(10, 20)\n",
-    "st.dataframe(dataframe)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 7,
-   "id": "1ea3c2da",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "DeltaGenerator(_root_container=0, _provided_cursor=None, _parent=None, _block_type=None, _form_data=None)"
-      ]
-     },
-     "execution_count": 7,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "dataframe = pd.DataFrame(\n",
-    "    np.random.randn(10, 20),\n",
-    "    columns=('col %d' % i for i in range(20)))\n",
-    "\n",
-    "st.dataframe(dataframe.style.highlight_max(axis=0))"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 8,
-   "id": "3456d013",
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "DeltaGenerator(_root_container=0, _provided_cursor=None, _parent=None, _block_type=None, _form_data=None)"
-      ]
-     },
-     "execution_count": 8,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "chart_data = pd.DataFrame(\n",
-    "     np.random.randn(20, 3),\n",
-    "     columns=['a', 'b', 'c'])\n",
-    "\n",
-    "st.line_chart(chart_data)"
-   ]
-  },
-  {
    "cell_type": "code",
    "execution_count": null,
-   "id": "ed122282",
+   "id": "7937d7a2",
    "metadata": {},
    "outputs": [],
    "source": []
